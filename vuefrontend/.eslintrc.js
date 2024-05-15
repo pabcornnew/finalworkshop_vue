@@ -3,19 +3,16 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true // Add this line to support ES2021 syntax
   },
   extends: [
     'plugin:vue/essential',
     '@vue/standard'
   ],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 12, // Use ES2021 version for modern syntax
     sourceType: 'module',
     parser: '@babel/eslint-parser'
-  },
-  plugins: {
-    vue
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
