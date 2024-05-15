@@ -26,8 +26,9 @@
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn prepend-icon="$vuetify" variant="outlined">Go to Website</v-btn>
+      <RouterLink to="/shop">
+        <v-btn prepend-icon="$vuetify" variant="outlined">Go to Website</v-btn>
+      </RouterLink>
       <!-- <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
@@ -50,7 +51,11 @@ export default {
   name: 'App',
 
   data: () => ({
+    // button website
+    isClick: false
+  }),
+  methods: {
     //
-  })
+  }
 }
 </script>

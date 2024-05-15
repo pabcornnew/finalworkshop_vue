@@ -1,8 +1,14 @@
 <template>
-    <div>
-        <h2>Nothing in here</h2>
-    </div>
+    <v-row>
+        <cardP />
+    </v-row>
 </template>
 
 <script>
+import cardP from '../../components/cardProduct.vue'
+
+export default {
+  name: 'showProduct',
+  components: { cardP }
+}
 </script>
