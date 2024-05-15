@@ -13,18 +13,17 @@ var app = express();
 var cors = require('cors');
 
 // mongoose
-const mongoose = require('mongoose');
-const { DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS } = process.env;
-mongoose.connect(`mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`,{
-  user: DB_USER,
-  pass: DB_PASS,
-  useUnifiendTopology: true,
-  useNewUrlParser: true
-}).then(() => {
-  console.log('DB connect.');
-}).catch(err => {
-  console.error('DB connect fail! : ' + err);
-});
+// const mongoose = require('mongoose');
+// const { DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS } = process.env;
+
+// mongoose.connect(`mongodb://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`, {
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true
+// }).then(() => {
+//   console.log('DB connect.');
+// }).catch(err => {
+//   console.error('DB connect fail! : ', err);
+// });
 
 app.use(cors());
 
