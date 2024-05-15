@@ -12,7 +12,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12, // Use ES2021 version for modern syntax
     sourceType: 'module',
-    parser: '@babel/eslint-parser'
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
