@@ -27,7 +27,7 @@
 
       <v-spacer></v-spacer>
       <RouterLink to="/shop">
-        <v-btn prepend-icon="$vuetify" variant="outlined">Go to Website</v-btn>
+        <v-btn prepend-icon="$vuetify" variant="outlined"><span class="mr-2">Go to Website</span> <v-icon>mdi-open-in-new</v-icon></v-btn>
       </RouterLink>
       <!-- <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"

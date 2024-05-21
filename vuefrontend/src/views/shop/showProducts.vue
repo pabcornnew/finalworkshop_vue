@@ -1,9 +1,18 @@
 <template>
-  <v-row dense justify="center">
-    <div v-for="(item, index) in getData" :key="index">
-      <cardP :name="item.product_name" :detail="item.detail" :price="item.price" />
-    </div>
-  </v-row>
+  <v-container>
+    <v-container>
+      <v-flex>
+        <v-btn color="blue">Cart</v-btn>
+      </v-flex>
+    </v-container>
+    <v-container class="grey" fluid>
+      <v-row no-gutters>
+        <v-col cols="12" sm="4" v-for="(item, index) in getData" :key="index">
+          <cardP class="ma-2 pa-2" :name="item.product_name" :detail="item.product_detail" :price="item.price" />
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-container>
 </template>
 
 <script>
